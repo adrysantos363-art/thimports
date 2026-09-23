@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TH Imports — perfumes premium e atendimento personalizado.">
+  <title>TH Imports | Perfumes Premium V2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✦ Curadoria de fragrâncias premium</span>
+    <span>🚚 Envio para todo o Brasil</span>
+    <span>◉ Atendimento VIP via WhatsApp</span>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#home"><img src="assets/logo.png" alt="TH Imports"></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#sobre">A marca</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="actions">
+      <button class="round-btn" id="openSearch" title="Pesquisar">⌕</button>
+      <button class="round-btn cart" id="openCart" title="Carrinho">🛍<span id="cartBadge">0</span></button>
+      <button class="admin-btn" id="openAdmin">Painel admin</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="kicker">TH IMPORTS • FRAGRÂNCIAS SELECIONADAS</div>
+        <h1>Uma assinatura<br><em>inesquecível.</em></h1>
+        <p>Perfumes que traduzem presença, elegância e personalidade. Descubra sua próxima fragrância favorita.</p>
+        <div class="hero-buttons">
+          <a href="#catalogo" class="primary-btn">Explorar catálogo ↗</a>
+          <a href="#sobre" class="secondary-btn">Conheça a TH Imports</a>
+        </div>
+        <div class="trust-line"><span>✓ Seleção premium</span><span>✓ Atendimento humanizado</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="halo"></div>
+        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1000&q=90" alt="Frasco de perfume em fotografia de produto">
+        <div class="floating-card"><strong>ESSENCE EDIT</strong><small>Elegância em cada detalhe</small></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><b>01</b><span><strong>Seleção cuidadosa</strong><small>Fragrâncias escolhidas</small></span></div>
+      <div><b>02</b><span><strong>Experiência premium</strong><small>Atendimento personalizado</small></span></div>
+      <div><b>03</b><span><strong>Compra simplificada</strong><small>Pedido pelo WhatsApp</small></span></div>
+      <div><b>04</b><span><strong>Envio nacional</strong><small>Consulte condições</small></span></div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="heading">
+        <span class="kicker">DESCUBRA SUA ESSÊNCIA</span>
+        <h2>Catálogo em destaque</h2>
+        <p>Imagens demonstrativas de produto. Cadastre suas próprias fotos no painel administrativo.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="categories" id="categories">
+          <button class="category active" data-category="todos">Todos</button>
+          <button class="category" data-category="masculino">Masculinos</button>
+          <button class="category" data-category="feminino">Femininos</button>
+          <button class="category" data-category="unissex">Unissex</button>
+        </div>
+        <select id="sortProducts" aria-label="Ordenar produtos">
+          <option value="featured">Em destaque</option>
+          <option value="low">Menor preço</option>
+          <option value="high">Maior preço</option>
+          <option value="name">Nome A-Z</option>
+        </select>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="offer" id="ofertas">
+      <div>
+        <span class="kicker">EXPERIÊNCIA TH IMPORTS</span>
+        <h2>Seu perfume fala<br>antes de você.</h2>
+        <p>Consulte as condições especiais e receba uma recomendação personalizada para seu estilo.</p>
+        <a class="primary-btn" href="https://wa.me/5521999999999?text=Olá!%20Quero%20uma%20recomendação%20de%20perfume." target="_blank">Falar com especialista ↗</a>
+      </div>
+      <div class="offer-seal"><span>TH</span><small>IMPORTS</small></div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="about-content">
+        <span class="kicker">SOBRE A MARCA</span>
+        <h2>Luxo está nos detalhes.</h2>
+        <p>A TH Imports nasceu para conectar pessoas a fragrâncias marcantes, com uma experiência de compra elegante, prática e próxima. Nosso foco é facilitar sua escolha e valorizar cada momento.</p>
+        <div class="about-list"><span>✓ Curadoria de aromas</span><span>✓ Atendimento próximo</span><span>✓ Experiência digital responsiva</span></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="heading"><span class="kicker">ATENDIMENTO</span><h2>Vamos conversar?</h2><p>Escolha um canal para falar com a TH Imports.</p></div>
+      <div class="contact-cards">
+        <a href="https://wa.me/5521999999999" target="_blank"><span>◉</span><strong>WhatsApp</strong><small>Atendimento rápido</small></a>
+        <a href="https://www.instagram.com/loja_perfumes/" target="_blank"><span>◎</span><strong>Instagram</strong><small>@loja_perfumes</small></a>
+        <a href="mailto:contato@thimports.com"><span>✉</span><strong>E-mail</strong><small>contato@thimports.com</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.png" alt="TH Imports">
+    <p>© <span id="year"></span> TH Imports. Importar é conectar o mundo.</p>
+  </footer>
+
+  <!-- Cart -->
+  <div class="modal hidden" id="cartModal">
+    <div class="modal-box">
+      <button class="close" data-close="cartModal">×</button>
+      <h3>Seu carrinho</h3>
+      <div id="cartItems"></div>
+      <div class="total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <a id="checkout" class="primary-btn full" target="_blank">Finalizar no WhatsApp ↗</a>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="modal hidden" id="searchModal">
+    <div class="modal-box">
+      <button class="close" data-close="searchModal">×</button>
+      <h3>Pesquisar catálogo</h3>
+      <input class="field" id="searchField" type="search" placeholder="Digite o nome ou categoria">
+      <p class="muted">A listagem será filtrada enquanto você digita.</p>
+    </div>
+  </div>
+
+  <!-- Admin login -->
+  <div class="modal hidden" id="loginModal">
+    <div class="modal-box small">
+      <button class="close" data-close="loginModal">×</button>
+      <h3>Acesso administrativo</h3>
+      <p class="muted">Acesso seguro pelo Firebase Authentication.</p>
+      <input class="field" id="adminEmail" type="email" placeholder="E-mail do administrador">
+      <input class="field" id="adminPassword" type="password" placeholder="Senha do Firebase">
+      <button class="primary-btn full" id="loginBtn">Entrar no painel</button>
+      <p class="error" id="loginError"></p>
+    </div>
+  </div>
+
+  <!-- Admin panel -->
+  <div class="modal hidden" id="adminModal">
+    <div class="modal-box admin-box">
+      <button class="close" data-close="adminModal">×</button>
+      <div class="admin-top"><div><span class="kicker">GESTÃO LOCAL</span><h3>Painel administrativo</h3></div><button class="secondary-btn" id="logoutBtn">Sair</button></div>
+      <div class="admin-tabs"><button class="tab active" data-tab="productsTab">Produtos</button><button class="tab" data-tab="settingsTab">Configurações</button></div>
+
+      <div id="productsTab" class="tab-content">
+        <div class="admin-actions"><button class="primary-btn" id="newProduct">+ Novo produto</button><button class="secondary-btn" id="exportProducts">Exportar JSON</button><label class="secondary-btn file-label">Importar JSON<input type="file" id="importProducts" accept=".json"></label></div>
+        <div id="adminProductList" class="admin-list"></div>
+        <form id="productForm" class="product-form hidden">
+          <h4 id="formTitle">Cadastrar produto</h4>
+          <input type="hidden" id="editId">
+          <div class="form-grid">
+            <label>Nome<input class="field" id="pName" required></label>
+            <label>Categoria<select class="field" id="pCategory"><option value="masculino">Masculino</option><option value="feminino">Feminino</option><option value="unissex">Unissex</option></select></label>
+            <label>Preço<input class="field" id="pPrice" type="number" min="0" step="0.01" required></label>
+            <label>Etiqueta<input class="field" id="pTag" placeholder="NOVO, PROMOÇÃO..."></label>
+          </div>
+          <label>URL da imagem real<input class="field" id="pImage" placeholder="https://...jpg" required></label>
+          <label>Descrição<input class="field" id="pDescription" required></label>
+          <div class="form-actions"><button type="submit" class="primary-btn">Salvar produto</button><button type="button" class="secondary-btn" id="cancelForm">Cancelar</button></div>
+        </form>
+      </div>
+
+      <div id="settingsTab" class="tab-content hidden">
+        <p class="muted">Altere os dados de contato usados nos botões do site.</p>
+        <h4>Dados da loja</h4>
+        <label>WhatsApp com código do país<input class="field" id="settingWhatsapp" placeholder="5521999999999"></label>
+        <label>Instagram<input class="field" id="settingInstagram" placeholder="loja_perfumes"></label>
+        <label>E-mail<input class="field" id="settingEmail" placeholder="contato@thimports.com"></label>
+
+        <h4>Pagamento</h4>
+        <label>Token/chave pública do gateway
+          <input class="field" id="settingPaymentPublicKey" placeholder="pk_public_...">
+        </label>
+        <p class="muted warning-note">Use somente chave pública ou token publicado pelo gateway. Nunca coloque secret key, senha ou token privado no HTML, no navegador ou no Firestore.</p>
+
+        <h4>Firebase / Firestore</h4>
+        <p class="muted">Cole as configurações do seu projeto Firebase. Depois, use os botões para sincronizar produtos e configurações.</p>
+        <div class="form-grid">
+          <label>apiKey<input class="field" id="fbApiKey" placeholder="AIza..."></label>
+          <label>authDomain<input class="field" id="fbAuthDomain" placeholder="seu-projeto.firebaseapp.com"></label>
+          <label>projectId<input class="field" id="fbProjectId" placeholder="seu-projeto"></label>
+          <label>storageBucket<input class="field" id="fbStorageBucket" placeholder="seu-projeto.appspot.com"></label>
+          <label>messagingSenderId<input class="field" id="fbMessagingSenderId" placeholder="123456789"></label>
+          <label>appId<input class="field" id="fbAppId" placeholder="1:123:web:abc"></label>
+        </div>
+        <div class="form-actions">
+          <button class="primary-btn" id="saveSettings">Salvar configurações</button>
+          <button class="secondary-btn" id="connectFirebase">Conectar Firebase</button>
+          <button class="secondary-btn" id="uploadFirebase">Enviar produtos para Firebase</button>
+          <button class="secondary-btn" id="downloadFirebase">Carregar do Firebase</button>
+        </div>
+        <p class="muted" id="firebaseStatus">Firebase ainda não conectado.</p>
+        <p class="muted">Produtos salvos, editados ou excluídos pelo administrador serão sincronizados com o Firestore.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK: configure seus dados no painel administrativo -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
