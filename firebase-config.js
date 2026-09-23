@@ -5,7 +5,7 @@
   devem proteger os dados da loja.
 */
 window.TH_FIREBASE_CONFIG = {
-  apiKey: "COLE_AQUI_SUA_API_KEY",
+  apiKey: "AIzaSyBbm37gVOWlnJGWrGtLmiRa8NjrjsdMvG0",
   authDomain: "thimports-1ce81.firebaseapp.com",
   projectId: "thimports-1ce81",
   storageBucket: "thimports-1ce81.firebasestorage.app",
